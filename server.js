@@ -24,8 +24,6 @@ const port = process.env.PORT || 5000;
 
 
 
-
-
 // ✅ Enable CORS first
  app.use(
   cors({
