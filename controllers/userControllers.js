@@ -193,6 +193,7 @@ exports.loginUser = async (req, res) => {
     console.log("🟢 Login successful");
     console.log("user token",accessToken)
     res.json({
+      message:"Login successful",
       accessToken: accessToken,
       user: {
         name: user.name,

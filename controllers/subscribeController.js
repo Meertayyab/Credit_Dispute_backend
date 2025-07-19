@@ -23,8 +23,8 @@ exports.createCheckoutSession = async (req, res) => {
           quantity: 1,
         },
       ],
-      success_url: `${process.env.CLIENT_URL}/dashboard?success=true`,
-      cancel_url: `${process.env.CLIENT_URL}/plans?cancelled=true`,
+      success_url: `${process.env.FRONTEND_URL}/dashboard?success=true`,
+      cancel_url: `${process.env.FRONTEND_URL}/plans?cancelled=true`,
       metadata: {
         userId,
         planId,
